@@ -19,23 +19,44 @@ namespace ULMSWinFormsApp.Forms
 
         private void btnSaveStudent_Click(object sender, EventArgs e)
         {
-            // Intentional weak validation for testing purposes
-            Student student = new Student
+            try
             {
-                StudentId = txtStudentId.Text,
-                FullName = txtFullName.Text,
-                Email = txtEmail.Text,
-                Age = int.Parse(txtAge.Text),
-                Programme = cmbProgramme.Text
-            };
+                if (string.IsNullOrWhiteSpace(txtFullName.Text) || string.IsNullOrWhiteSpace(txtStudentId.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) 
+                    || string.IsNullOrWhiteSpace(cmbProgramme.Text))
+                {
+                    MessageBox.Show("There cannot be empty inputs.");
+                    return;
+                }
 
-            txtStudentOutput.Text =
+                if (!int.TryParse(txtAge.Text, out int parsedAge))
+                {
+                    MessageBox.Show("Please enter a valid number for the age.");
+                    return;
+                }
+
+                Student student = new Student
+                {
+                    StudentId = txtStudentId.Text,
+                    FullName = txtFullName.Text,
+                    Email = txtEmail.Text,
+                    Age = parsedAge,
+                    Programme = cmbProgramme.Text
+
+                };
+
+                txtStudentOutput.Text =
                 "Student saved successfully!" + Environment.NewLine +
                 "Student ID: " + student.StudentId + Environment.NewLine +
                 "Full Name: " + student.FullName + Environment.NewLine +
                 "Email: " + student.Email + Environment.NewLine +
                 "Age: " + student.Age + Environment.NewLine +
                 "Programme: " + student.Programme;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
 
         private void btnClearStudent_Click(object sender, EventArgs e)
@@ -55,5 +76,9 @@ namespace ULMSWinFormsApp.Forms
             this.Close();
         }
 
+        private void FrmStudentRegistration_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

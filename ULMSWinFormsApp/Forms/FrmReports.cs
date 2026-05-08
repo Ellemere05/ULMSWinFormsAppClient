@@ -21,8 +21,6 @@ namespace ULMSWinFormsApp.Forms
             string reportType = cmbReportType.Text;
             string studentId = txtReportStudentId.Text;
 
-            // Intentional poor performance simulation
-            Thread.Sleep(4000);
 
             StringBuilder report = new StringBuilder();
 

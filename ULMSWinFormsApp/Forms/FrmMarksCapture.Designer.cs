@@ -47,88 +47,94 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(44, 37);
+            label1.Location = new Point(38, 28);
             label1.Name = "label1";
-            label1.Size = new Size(79, 20);
+            label1.Size = new Size(62, 15);
             label1.TabIndex = 0;
             label1.Text = "Student ID";
             // 
             // txtMarkStudentId
             // 
-            txtMarkStudentId.Location = new Point(181, 34);
+            txtMarkStudentId.Location = new Point(158, 26);
+            txtMarkStudentId.Margin = new Padding(3, 2, 3, 2);
             txtMarkStudentId.Name = "txtMarkStudentId";
-            txtMarkStudentId.Size = new Size(256, 27);
+            txtMarkStudentId.Size = new Size(224, 23);
             txtMarkStudentId.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(44, 75);
+            label2.Location = new Point(38, 56);
             label2.Name = "label2";
-            label2.Size = new Size(104, 20);
+            label2.Size = new Size(83, 15);
             label2.TabIndex = 2;
             label2.Text = "Student Name";
             // 
             // txtMarkStudentName
             // 
-            txtMarkStudentName.Location = new Point(181, 75);
+            txtMarkStudentName.Location = new Point(158, 56);
+            txtMarkStudentName.Margin = new Padding(3, 2, 3, 2);
             txtMarkStudentName.Name = "txtMarkStudentName";
-            txtMarkStudentName.Size = new Size(256, 27);
+            txtMarkStudentName.Size = new Size(224, 23);
             txtMarkStudentName.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(44, 131);
+            label3.Location = new Point(38, 98);
             label3.Name = "label3";
-            label3.Size = new Size(107, 20);
+            label3.Size = new Size(85, 15);
             label3.TabIndex = 4;
             label3.Text = "Subject 1 Mark";
             // 
             // txtSubject1
             // 
-            txtSubject1.Location = new Point(181, 131);
+            txtSubject1.Location = new Point(158, 98);
+            txtSubject1.Margin = new Padding(3, 2, 3, 2);
             txtSubject1.Name = "txtSubject1";
-            txtSubject1.Size = new Size(256, 27);
+            txtSubject1.Size = new Size(224, 23);
             txtSubject1.TabIndex = 5;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(44, 188);
+            label4.Location = new Point(38, 141);
             label4.Name = "label4";
-            label4.Size = new Size(107, 20);
+            label4.Size = new Size(85, 15);
             label4.TabIndex = 6;
             label4.Text = "Subject 2 Mark";
             // 
             // txtSubject2
             // 
-            txtSubject2.Location = new Point(181, 188);
+            txtSubject2.Location = new Point(158, 141);
+            txtSubject2.Margin = new Padding(3, 2, 3, 2);
             txtSubject2.Name = "txtSubject2";
-            txtSubject2.Size = new Size(256, 27);
+            txtSubject2.Size = new Size(224, 23);
             txtSubject2.TabIndex = 7;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(41, 240);
+            label5.Location = new Point(36, 180);
             label5.Name = "label5";
-            label5.Size = new Size(107, 20);
+            label5.Size = new Size(85, 15);
             label5.TabIndex = 8;
             label5.Text = "Subject 3 Mark";
             // 
             // txtSubject3
             // 
-            txtSubject3.Location = new Point(181, 240);
+            txtSubject3.Location = new Point(158, 180);
+            txtSubject3.Margin = new Padding(3, 2, 3, 2);
             txtSubject3.Name = "txtSubject3";
-            txtSubject3.Size = new Size(256, 27);
+            txtSubject3.Size = new Size(224, 23);
             txtSubject3.TabIndex = 9;
             // 
             // btnCalculateResults
             // 
-            btnCalculateResults.Location = new Point(49, 310);
+            btnCalculateResults.Location = new Point(43, 232);
+            btnCalculateResults.Margin = new Padding(3, 2, 3, 2);
             btnCalculateResults.Name = "btnCalculateResults";
-            btnCalculateResults.Size = new Size(139, 45);
+            btnCalculateResults.Size = new Size(122, 34);
             btnCalculateResults.TabIndex = 10;
             btnCalculateResults.Text = "Calculate Results";
             btnCalculateResults.UseVisualStyleBackColor = true;
@@ -136,9 +142,10 @@
             // 
             // btnClearMarks
             // 
-            btnClearMarks.Location = new Point(213, 310);
+            btnClearMarks.Location = new Point(186, 232);
+            btnClearMarks.Margin = new Padding(3, 2, 3, 2);
             btnClearMarks.Name = "btnClearMarks";
-            btnClearMarks.Size = new Size(139, 45);
+            btnClearMarks.Size = new Size(122, 34);
             btnClearMarks.TabIndex = 11;
             btnClearMarks.Text = "Clear";
             btnClearMarks.UseVisualStyleBackColor = true;
@@ -146,9 +153,10 @@
             // 
             // btnBackMarks
             // 
-            btnBackMarks.Location = new Point(373, 310);
+            btnBackMarks.Location = new Point(326, 232);
+            btnBackMarks.Margin = new Padding(3, 2, 3, 2);
             btnBackMarks.Name = "btnBackMarks";
-            btnBackMarks.Size = new Size(139, 45);
+            btnBackMarks.Size = new Size(122, 34);
             btnBackMarks.TabIndex = 12;
             btnBackMarks.Text = "Back";
             btnBackMarks.UseVisualStyleBackColor = true;
@@ -156,18 +164,19 @@
             // 
             // txtMarksOutput
             // 
-            txtMarksOutput.Location = new Point(486, 37);
+            txtMarksOutput.Location = new Point(425, 28);
+            txtMarksOutput.Margin = new Padding(3, 2, 3, 2);
             txtMarksOutput.Multiline = true;
             txtMarksOutput.Name = "txtMarksOutput";
             txtMarksOutput.ReadOnly = true;
-            txtMarksOutput.Size = new Size(339, 212);
+            txtMarksOutput.Size = new Size(297, 160);
             txtMarksOutput.TabIndex = 13;
             // 
             // FrmMarksCapture
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(882, 453);
+            ClientSize = new Size(772, 340);
             Controls.Add(txtMarksOutput);
             Controls.Add(btnBackMarks);
             Controls.Add(btnClearMarks);
@@ -182,9 +191,11 @@
             Controls.Add(label2);
             Controls.Add(txtMarkStudentId);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FrmMarksCapture";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Umoja Learning Management System - Marks Capture";
+            Load += FrmMarksCapture_Load;
             ResumeLayout(false);
             PerformLayout();
         }

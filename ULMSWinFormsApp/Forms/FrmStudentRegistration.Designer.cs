@@ -47,73 +47,77 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(35, 69);
+            label1.Location = new Point(31, 52);
             label1.Name = "label1";
-            label1.Size = new Size(79, 20);
+            label1.Size = new Size(62, 15);
             label1.TabIndex = 0;
             label1.Text = "Student ID";
             // 
             // txtStudentId
             // 
-            txtStudentId.Location = new Point(150, 66);
+            txtStudentId.Location = new Point(131, 50);
+            txtStudentId.Margin = new Padding(3, 2, 3, 2);
             txtStudentId.Name = "txtStudentId";
-            txtStudentId.Size = new Size(320, 27);
+            txtStudentId.Size = new Size(280, 23);
             txtStudentId.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(35, 112);
+            label2.Location = new Point(31, 84);
             label2.Name = "label2";
-            label2.Size = new Size(76, 20);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 2;
             label2.Text = "Full Name";
             // 
             // txtFullName
             // 
-            txtFullName.Location = new Point(150, 112);
+            txtFullName.Location = new Point(131, 84);
+            txtFullName.Margin = new Padding(3, 2, 3, 2);
             txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(320, 27);
+            txtFullName.Size = new Size(280, 23);
             txtFullName.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(35, 167);
+            label3.Location = new Point(31, 125);
             label3.Name = "label3";
-            label3.Size = new Size(46, 20);
+            label3.Size = new Size(36, 15);
             label3.TabIndex = 4;
             label3.Text = "Email";
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(154, 167);
+            txtEmail.Location = new Point(135, 125);
+            txtEmail.Margin = new Padding(3, 2, 3, 2);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(316, 27);
+            txtEmail.Size = new Size(277, 23);
             txtEmail.TabIndex = 5;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(35, 220);
+            label4.Location = new Point(31, 165);
             label4.Name = "label4";
-            label4.Size = new Size(36, 20);
+            label4.Size = new Size(28, 15);
             label4.TabIndex = 6;
             label4.Text = "Age";
             // 
             // txtAge
             // 
-            txtAge.Location = new Point(154, 217);
+            txtAge.Location = new Point(135, 163);
+            txtAge.Margin = new Padding(3, 2, 3, 2);
             txtAge.Name = "txtAge";
-            txtAge.Size = new Size(316, 27);
+            txtAge.Size = new Size(277, 23);
             txtAge.TabIndex = 7;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(35, 263);
+            label5.Location = new Point(31, 197);
             label5.Name = "label5";
-            label5.Size = new Size(87, 20);
+            label5.Size = new Size(70, 15);
             label5.TabIndex = 8;
             label5.Text = "Programme";
             // 
@@ -121,16 +125,18 @@
             // 
             cmbProgramme.FormattingEnabled = true;
             cmbProgramme.Items.AddRange(new object[] { "Software Development", "Software Engineering", "Data Science", "Cloud Computing", "Cyber Security" });
-            cmbProgramme.Location = new Point(150, 260);
+            cmbProgramme.Location = new Point(131, 195);
+            cmbProgramme.Margin = new Padding(3, 2, 3, 2);
             cmbProgramme.Name = "cmbProgramme";
-            cmbProgramme.Size = new Size(320, 28);
+            cmbProgramme.Size = new Size(280, 23);
             cmbProgramme.TabIndex = 9;
             // 
             // btnSaveStudent
             // 
-            btnSaveStudent.Location = new Point(53, 334);
+            btnSaveStudent.Location = new Point(46, 250);
+            btnSaveStudent.Margin = new Padding(3, 2, 3, 2);
             btnSaveStudent.Name = "btnSaveStudent";
-            btnSaveStudent.Size = new Size(148, 49);
+            btnSaveStudent.Size = new Size(130, 37);
             btnSaveStudent.TabIndex = 10;
             btnSaveStudent.Text = "Save Student";
             btnSaveStudent.UseVisualStyleBackColor = true;
@@ -138,9 +144,10 @@
             // 
             // btnClearStudent
             // 
-            btnClearStudent.Location = new Point(233, 334);
+            btnClearStudent.Location = new Point(204, 250);
+            btnClearStudent.Margin = new Padding(3, 2, 3, 2);
             btnClearStudent.Name = "btnClearStudent";
-            btnClearStudent.Size = new Size(93, 49);
+            btnClearStudent.Size = new Size(81, 37);
             btnClearStudent.TabIndex = 11;
             btnClearStudent.Text = "Clear";
             btnClearStudent.UseVisualStyleBackColor = true;
@@ -148,9 +155,10 @@
             // 
             // btnBackToDashboard
             // 
-            btnBackToDashboard.Location = new Point(374, 334);
+            btnBackToDashboard.Location = new Point(327, 250);
+            btnBackToDashboard.Margin = new Padding(3, 2, 3, 2);
             btnBackToDashboard.Name = "btnBackToDashboard";
-            btnBackToDashboard.Size = new Size(97, 49);
+            btnBackToDashboard.Size = new Size(85, 37);
             btnBackToDashboard.TabIndex = 12;
             btnBackToDashboard.Text = "Back";
             btnBackToDashboard.UseVisualStyleBackColor = true;
@@ -158,18 +166,19 @@
             // 
             // txtStudentOutput
             // 
-            txtStudentOutput.Location = new Point(537, 69);
+            txtStudentOutput.Location = new Point(470, 52);
+            txtStudentOutput.Margin = new Padding(3, 2, 3, 2);
             txtStudentOutput.Multiline = true;
             txtStudentOutput.Name = "txtStudentOutput";
             txtStudentOutput.ReadOnly = true;
-            txtStudentOutput.Size = new Size(304, 259);
+            txtStudentOutput.Size = new Size(266, 195);
             txtStudentOutput.TabIndex = 13;
             // 
             // FrmStudentRegistration
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(882, 453);
+            ClientSize = new Size(772, 340);
             Controls.Add(txtStudentOutput);
             Controls.Add(btnBackToDashboard);
             Controls.Add(btnClearStudent);
@@ -184,9 +193,11 @@
             Controls.Add(label2);
             Controls.Add(txtStudentId);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FrmStudentRegistration";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Umoja Learning Management System - Student Registration";
+            Load += FrmStudentRegistration_Load;
             ResumeLayout(false);
             PerformLayout();
         }
